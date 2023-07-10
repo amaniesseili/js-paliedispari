@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>gioco del pari o dispari </title>
+</head>
+<body>
+    <header></header>
+
+    <main>
+        
+<div class="container">
+   
+    <div class="row">
+        
+        <div class="col-md-4">
+
+            <form class="needs-validation" novalidate>
+                
+            <h3>Gioco del Pari o Dispari</h3>
+            <p class="descrizione"> Scegli un numero da 1 a 5 e indovina se la somma dei numeri da te scelto e generato dal computer sarà pari o dispari </p>
+
+                <div class="form-row">
+                    <div class=" ">
+                        <label for="giocatore">Giocatore</label>
+                        <input type="text" class="form-control" id="input-numero-utente" placeholder="Inserici il tuo numero" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mt-3 ">
+                        <label for="computer">Computer</label>
+                        <input type="text" class="form-control" id="input-numero-computer" placeholder="Computer" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+
+                    
+                <fieldset class="form-group mt-3">
+                    <div class="row">
+
+                        <!-- <legend class="col-form-label col-sm-2 pt-0">Pari o dispari</legend> -->
+                        <div class="col-sm-10  d-flex ">
+                            <div class="form-check me-5">
+                                <input class="form-check-input" type="radio" name="scelta-utente" id="gridRadios1" value="pari" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Pari
+                                </label>
+                            </div>
+                        
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="scelta-utente" id="gridRadios2" value="dispari">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Dispari
+                                </label>
+                            </div>
+                        </div> 
+                    </div>
+
+                </fieldset>
+                <div class="d-flex flex-column mt-3">
+                    <button class="btn btn-primary" type="submit">Gioca</button>
+
+                </div>
+
+                
+            </form>
+
+
+
+
+        </div>
+    </div>
+
+</div>
+
+    </main>
+
+
+
+   
+
+    <script src="main.js"></script>
+</body>
+
+
+</html>
