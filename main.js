@@ -8,15 +8,20 @@
 const btnGioca = document.querySelector(".btn-gioca");
 
 btnGioca.addEventListener( "click", function gioco(){
-    const numeroUtente = parseInt( document.getElementById(input-numero-utente).value) ; //numero utente 
+    const numeroUtente = parseInt( document.getElementById("input-numero-utente").value) ; //numero utente 
     const sceltaUtente= document.querySelector("input[name=scelta-utente]").value ;      //pari o dispari
     
     const numeroComputer = Math.floor(Math.random() * 5) + 1 ; // numero random per il computer
-    document.getElementById("uinput-numero-computer").innerHTML =  numeroComputer;
+    document.getElementById("input-numero-computer").innerHTML =  numeroComputer;
 
     const somma = numeroUtente + numeroComputer; // la somma dei due numeri
 
-    let risultato = ( somma % 2 === 0 )   // per sapere se il risultato e pari o dispari 
+
+    
+    // let risultato = ( somma % 2 === 0 )   // per sapere se il risultato e pari o dispari 
+    let risultato = "dispari"
+    if(somma % 2 === 0 );
+    risultato = "pari"
 
 
     if ( risultato === sceltaUtente) {
