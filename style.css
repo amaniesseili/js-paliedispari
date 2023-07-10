@@ -1,7 +1,35 @@
+
 header{
-    height: 60px;
+    height: 150px;
+    border-bottom: 2px solid black;
+
+}
+
+footer{
+    height: 70px;
+    border-top: 2px solid black;
+}
+main{
+    height: calc(100vh - 220px);
 }
 .ama-btn{
     margin-top: 8.5rem;
+    
 
+}
+
+.ama-img{
+    width: 32%;
+}
+
+h3{
+    margin-top: 85px;
+}
+
+.btn-gioca{
+    background-color:  #347893;
+}
+
+.btn-verifica{
+    background-color:  #347893;
 }

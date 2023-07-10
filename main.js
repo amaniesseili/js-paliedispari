@@ -39,3 +39,22 @@ btnGioca.addEventListener( "click", function gioco(){
 //Chiedere all’utente di inserire una parola
 //Creare una funzione per capire se la parola inserita è palindroma
 //(una parola che si legge allo stesso modo anche da destra versi sinistra, ad esempio anna, otto)
+
+const btnVerifica = document.querySelector(".btn-verifica");
+
+btnVerifica.addEventListener("click", function Palindroma(){
+    const parola = document.getElementById("input-parola-utente").value; 
+
+    let parolaInvertita = parola.split('').reverse().join('');
+
+    if  ( parola === parolaInvertita ){
+        document.getElementById("risultato").innerHTML= parola + " non è una parola Palindroma";
+
+    } else {
+        document.getElementById("risultato").innerHTML= parola + " è una parola Palindroma";
+
+    }
+
+    return false;
+}) ;
+
