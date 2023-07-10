@@ -15,67 +15,101 @@
         
 <div class="container">
    
-    <div class="row">
-        
-        <div class="col-md-4">
-
-            <form class="needs-validation" novalidate>
-                
-            <h3>Gioco del Pari o Dispari</h3>
-            <p class="descrizione"> Scegli un numero da 1 a 5 e indovina se la somma dei numeri da te scelto e generato dal computer sarà pari o dispari </p>
-
-                <div class="form-row">
-                    <div class="numero ">
-                        <label for="giocatore">Giocatore</label>
-                        <input type="text" class="form-control" id="input-numero-utente" placeholder="Inserici il tuo numero" value="" required>
-
-                    </div>
-                    <div class="computer mt-3 ">
-                        <label for="computer">Computer</label>
-                        <input type="text" class="form-control" id="input-numero-computer" placeholder="Computer" value="" required>
-                
-                    </div>
-
-                    
-                <fieldset class="form-group mt-3">
-                    <div class="row">
-
-                        <!-- Pari o dispari -->
-                        <div class="col-sm-10  d-flex ">
-                            <div class="form-check me-5">
-                                <input class="form-check-input" type="radio" name="scelta-utente" id="gridRadios1" value="pari" checked>
-                                <label class="form-check-label" for="gridRadios1">
-                                    Pari
-                                </label>
-                            </div>
-                        
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="scelta-utente" id="gridRadios2" value="dispari">
-                                <label class="form-check-label" for="gridRadios2">
-                                    Dispari
-                                </label>
-                            </div>
-                        </div> 
-                    </div>
-
-                </fieldset>
-                <div class="d-flex flex-column mt-3">
-                    <p id="messaggio"></p>
-                    <button class="btn btn-primary btn-gioca" type="submit">Gioca</button>
+    <div class="row d-flex">
+<!--________________________ Palindroma ___________________  -->
+        <div class="col-4">
+            <h3>Palindroma</h3>
+            <p class="descrizione">Palindroma o no? Inserisci la tua parola e scopri se è leggibile nello stesso mondo in entrambe le direzioni!</p>
+            <br>
+            <div class="form-row">
+                <div class="numero ">
+                    <label for="giocatore">Giocatore</label>
+                    <input type="text" class="form-control" id="input-parola-utente" placeholder="Inserici la tua parola" value="" required>
 
                 </div>
 
-                
-            </form>
+                <div class=" ama-btn d-flex flex-column ">
+                    <p id="messaggio-palindroma"></p>
+                    <button class="btn btn-primary btn-verifica" type="button">Verifica</button>
 
-
-
+                </div>
+            </div>
+            
+    
 
         </div>
+ <!-- ________________________ Pari o Dispari ___________________   -->
+            <div class="col-4">
+
+                <form class="needs-validation" novalidate>
+                    
+                <h3>Gioco del Pari o Dispari</h3>
+                <p class="descrizione"> Scegli un numero da 1 a 5 e indovina se la somma dei numeri da te scelto e generato dal computer sarà pari o dispari </p>
+    
+                    <div class="form-row">
+                        <div class="numero ">
+                            <label for="giocatore">Giocatore</label>
+                            <input type="text" class="form-control" id="input-numero-utente" placeholder="Inserici il tuo numero" value="" required>
+    
+                        </div>
+                        <div class="computer mt-3 ">
+                            <label for="computer">Computer</label>
+                            <input type="text" class="form-control" id="input-numero-computer" placeholder="Computer" value="" required>
+                    
+                        </div>
+    
+                        
+                    <fieldset class="form-group mt-3">
+                        <div class="row">
+    
+                            <!-- Pari o dispari -->
+                            <div class="col-sm-10  d-flex ">
+                                <div class="form-check me-5">
+                                    <input class="form-check-input" type="radio" name="scelta-utente" id="gridRadios1" value="pari" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Pari
+                                    </label>
+                                </div>
+                            
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="scelta-utente" id="gridRadios2" value="dispari">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Dispari
+                                    </label>
+                                </div>
+                            </div> 
+                        </div>
+    
+                    </fieldset>
+                    <div class="d-flex flex-column mt-3">
+                        <p id="messaggio"></p>
+                        <button class="btn btn-primary btn-gioca" type="button">Gioca</button>
+    
+                    </div>
+    
+                </form>
+            </div>
+            
+        
+      
+
+    
+
+
     </div>
 
+
+
+
+
 </div>
+
+
+
+
+
+
 
     </main>
 
